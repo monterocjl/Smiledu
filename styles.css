@@ -1,0 +1,51 @@
+@font-face {
+    font-family : 'Product Sans';
+    src         : url(/fonts/Product\ Sans\ Regular.ttf) format('truetype');
+    font-style  : normal;
+    font-weight : normal;
+    font-display: swap;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Product Sans';
+    vertical-align: baseline;
+}
+
+.smiledu {
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.smiledu-page {
+    display: flex;
+    flex: 1 1 0;
+    min-height: 1px;
+}
+
+.smiledu-sidebar {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    transition: margin-left 250ms ease-out,transform 250ms ease-out;
+    width: 275px;
+    background: teal;
+}
+
+.smiledu-main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 920px;
+    position: relative;
+    background: tomato;
+}
