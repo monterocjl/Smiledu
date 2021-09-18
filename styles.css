@@ -34,7 +34,7 @@ li, a {
     width: 10px;
     margin-left: 5px;
     transition: .3s all;
-    filter: grayscale(100%);
+    filter: invert(59%) sepia(2%) saturate(29%) hue-rotate(360deg) brightness(87%) contrast(88%);
     margin-left: auto;
     cursor: pointer;
 }
@@ -174,7 +174,7 @@ li, a {
 .smiledu-sidebar_all-tools_icon {
     width: 24px;
     margin-right: 27px;
-    filter: grayscale(100%);
+    filter: invert(59%) sepia(2%) saturate(29%) hue-rotate(360deg) brightness(87%) contrast(88%);
 }
 
 .smiledu-sidebar_all-tools button:hover .smiledu-sidebar_all-tools_icon {
