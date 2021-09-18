@@ -213,8 +213,6 @@ li, a {
     height: 80px;
 }
 
-/**/
-
 .smiledu-sidebar {
     transition: all 0.25s ease;
 }
@@ -250,8 +248,6 @@ li, a {
 .smiledu-sidebar .arrow-smiledu {    
     transition: all 0.15s ease;
 }
-
-/**/
 
 .smiledu-main {
     display: flex;
@@ -317,6 +313,7 @@ li, a {
 .search_icons div img {
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
 
 .smiledu-main_body_search-tools_text_filter {
@@ -353,4 +350,5 @@ li, a {
 .school-year-search-icons div img {
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
