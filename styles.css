@@ -260,7 +260,7 @@ li, a {
 }
 
 .smiledu-main_header {
-    height: 111px;
+    height: 130px;
     background: #fcdc27;
     color: white;
     padding: 20px;
@@ -316,11 +316,11 @@ li, a {
     cursor: pointer;
 }
 
-.smiledu-main_body_search-tools_text_filter {
+.text-filter {
     margin-top: 20px;
 }
 
-.smiledu-main_body_search-tools_text_subtitle {
+.text-subtitle {
     margin-top: 20px;
     text-align: center;
 }
@@ -342,13 +342,44 @@ li, a {
 }
 
 
-.school-year-search-icons div {
+.school-year_search-icons div {
     margin-right: 22px;
 }
 
 
-.school-year-search-icons div img {
+.school-year_search-icons div img {
     width: 20px;
     height: 20px;
     cursor: pointer;
+}
+
+.smiledu-main_body_college-levels {
+    margin-top: 33px;
+    margin-right: 14px;
+}
+
+.card-collage-levels {
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 18px;
+    padding: 18px;
+}
+
+.card-collage-levels_title {
+    display: flex;
+}
+
+.card-collage-levels_details {
+    margin: 20px 15px 10px 15px;
+}
+
+.card-collage-levels_details_classes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+
+.card-collage-levels_details_classes_attended {
+    text-decoration: underline;
+    color: #008f36;
 }
