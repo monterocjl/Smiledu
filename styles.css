@@ -13,6 +13,35 @@ body {
     font-size: 100%;
     font-family: 'Product Sans';
     vertical-align: baseline;
+    color: #838383;
+}
+
+button {
+    color: #838383;
+}
+
+p, ul {
+    margin: 0;
+}
+
+li, a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.arrow-smiledu {
+    transform: rotateX(180deg);
+    width: 10px;
+    margin-left: 5px;
+    transition: .3s all;
+    filter: grayscale(100%);
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.arrow-selected.showMenu {
+    transform: rotateX(0deg);
+    filter: grayscale(0%);
 }
 
 .smiledu {
@@ -36,10 +65,193 @@ body {
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
-    transition: margin-left 250ms ease-out,transform 250ms ease-out;
-    width: 275px;
-    background: teal;
+    width: 320px;
+    background: white;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 100;
 }
+
+.sidebar-all {
+    padding: 15px 10px 15px 8px;
+    border-bottom: 1px solid #dadada;
+}
+
+.tool-selected {
+    color: #fed600;
+}
+
+.smiledu-sidebar_header {
+    align-items: center;
+    display: flex;
+    height: 40px;
+    justify-content: flex-start;
+    margin-left: 13px;
+}
+
+.smiledu-sidebar_header_menu-btn {
+    background-image: url(/img/menu.svg);
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.smiledu-sidebar_header_logo {
+    width: 100px;
+}
+
+.smiledu-sidebar_user {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 16px;
+}
+
+.smiledu-sidebar_user_avatar {
+    height: 38px;
+    position: relative;
+    margin-right: 15px;
+    
+}
+
+.smiledu-sidebar_user_avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.smiledu-sidebar_user_avatar div {
+    background-image: url(/img/icons/corona.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    left: -8px;
+    top: -3px;
+    width: 1.25em;
+    height: 1.25em;
+}
+
+.smiledu-sidebar_user_name-role {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.smiledu-sidebar_user_name-role_title {
+    font-size: 15px;
+    display: flex;
+    white-space: nowrap;
+}
+
+.smiledu-sidebar_user_name-role_subtitle {
+    font-size: 13px;
+}
+
+.smiledu-sidebar_all-tools button {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    width: 100%;
+    border: none;
+    background: white;
+    cursor: pointer;
+    border-radius: 20px;
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.smiledu-sidebar_all-tools button:hover {
+    background: #f5f5f5 radial-gradient(circle, transparent 1%, #f5f5f5 1%) center/15000%;
+    color: #fcdc27;
+    border-radius: 20px;
+}
+
+.smiledu-sidebar_all-tools button:active {
+    background-color: #dddddd;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.smiledu-sidebar_all-tools_icon {
+    width: 24px;
+    margin-right: 27px;
+    filter: grayscale(100%);
+}
+
+.smiledu-sidebar_all-tools button:hover .smiledu-sidebar_all-tools_icon {
+    filter: grayscale(0);
+}
+
+.btn-matricula.showMenu {
+    background-color: #f5f5f5;
+    color: #fcdc27;
+    font-weight: 600;
+}
+
+.btn-matricula.showMenu .smiledu-sidebar_all-tools_icon {
+    filter: grayscale(0);
+}
+
+.sub-menu{
+    margin-left: 11px;
+    overflow: hidden;
+    height: 0;
+    transition: all 0.25s ease;
+}
+
+.sub-menu.showMenu {
+    height: 80px;
+}
+
+/**/
+
+.smiledu-sidebar {
+    transition: all 0.25s ease;
+}
+
+.smiledu-sidebar.close {
+    width: 80px;
+}
+
+.smiledu-sidebar.close .smiledu-sidebar_user .smiledu-sidebar_user_name-role,
+.smiledu-sidebar.close .smiledu-sidebar_user_name-role_title, 
+.smiledu-sidebar.close .arrow-smiledu {
+    transition-delay: 0.25s;
+    display: none;
+    pointer-events: none;
+    
+}
+
+.smiledu-sidebar.close .smiledu-sidebar_header a .smiledu-sidebar_header_logo {
+    transition-delay: 0.25s;
+    display: none;
+    pointer-events: none;
+}
+
+.smiledu-sidebar.close .smiledu-sidebar_header_menu-btn {
+    transition-delay: 0.25s;
+    margin-right: 0px;
+}
+
+
+.smiledu-sidebar .smiledu-sidebar_header_logo,
+.smiledu-sidebar .smiledu-sidebar_user_name-role,
+.smiledu-sidebar .smiledu-sidebar_user_name-role_title,
+.smiledu-sidebar .arrow-smiledu {    
+    transition: all 0.15s ease;
+}
+
+/**/
 
 .smiledu-main {
     display: flex;
@@ -47,5 +259,98 @@ body {
     flex-direction: column;
     min-width: 920px;
     position: relative;
-    background: tomato;
+    background: #f4f7f8;
+    min-height: 100vh;
+}
+
+.smiledu-main_header {
+    height: 111px;
+    background: #fcdc27;
+    color: white;
+    padding: 20px;
+}
+
+.smiledu-main_body {
+    display: flex;
+    height: 100%;
+}
+
+.smiledu-main_body_search-tools {
+    width: 325px;
+    padding: 25px;
+}
+
+.search-students {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input_search {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid;
+    padding-bottom: 8px;
+    width: 75%;
+}
+
+.input_search img {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+}
+
+.input_search input {
+    background: none;
+    border: none;
+}
+
+.search_icons {
+    display: flex;
+    align-items: center;
+}
+
+.search_icons div {
+    margin-left: 15px;
+}
+
+
+.search_icons div img {
+    width: 20px;
+    height: 20px;
+}
+
+.smiledu-main_body_search-tools_text_filter {
+    margin-top: 20px;
+}
+
+.smiledu-main_body_search-tools_text_subtitle {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.school-year {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.school-year div {
+    display: flex;
+    align-items: center;
+}
+
+.school-year .school-year_title {
+    width: 59%;
+    justify-content: space-between;
+}
+
+
+.school-year-search-icons div {
+    margin-right: 22px;
+}
+
+
+.school-year-search-icons div img {
+    width: 20px;
+    height: 20px;
 }
