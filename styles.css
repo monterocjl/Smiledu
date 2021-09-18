@@ -44,17 +44,6 @@ li, a {
     filter: grayscale(0%);
 }
 
-.smiledu {
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
 .smiledu-page {
     display: flex;
     flex: 1 1 0;
@@ -87,7 +76,7 @@ li, a {
     display: flex;
     height: 40px;
     justify-content: flex-start;
-    margin-left: 13px;
+    padding-left: 20px;
 }
 
 .smiledu-sidebar_header_menu-btn {
@@ -360,17 +349,31 @@ li, a {
 
 .card-collage-levels {
     margin: 10px;
-    border: 1px solid;
-    border-radius: 18px;
+    border: 1px solid #dadada;
+    border-radius: 13px;
     padding: 18px;
+}
+
+.card-collage-levels.showDetails {
+    background: white;
+    border: none;
+    box-shadow: 0 5px 11px -4px rgb(0 0 0 / 18%);
 }
 
 .card-collage-levels_title {
     display: flex;
+    cursor: pointer;
 }
 
-.card-collage-levels_details {
+.card-collage-levels_details {    
+    overflow: hidden;
+    height: 0;
+    transition: all 0.25s ease;
+}
+
+.card-collage-levels_details.showDetails {
     margin: 20px 15px 10px 15px;
+    height: 80px;
 }
 
 .card-collage-levels_details_classes {
@@ -381,5 +384,5 @@ li, a {
 
 .card-collage-levels_details_classes_attended {
     text-decoration: underline;
-    color: #008f36;
+    color: #00ba42;
 }
