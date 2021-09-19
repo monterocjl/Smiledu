@@ -27,3 +27,11 @@ for (let i = 0; i < cardCollageBtn.length; i++) {
         cardCollageSubMenu.classList.toggle("showDetails");
         card.classList.toggle("showDetails");
 })}
+
+// Para desplegar FABs
+const fabBtn = document.querySelector(".fab");
+const fabsOpen = document.querySelector(".fab-open");
+    fabBtn.addEventListener("click", ()=>{
+        fabsOpen.classList.toggle("showFabs");
+        fabBtn.classList.toggle("showFabs");
+    });

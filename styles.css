@@ -259,10 +259,11 @@ li, a {
 .smiledu-main_body {
     display: flex;
     height: 100%;
+    justify-content: space-between;
 }
 
 .smiledu-main_body_search-tools {
-    width: 325px;
+    width: 19%;
     padding: 25px;
 }
 
@@ -387,3 +388,85 @@ li, a {
     text-decoration: underline;
     color: #00ba42;
 }
+
+.smiledu-main_body_student-content {
+    display: flex;
+    background: white;
+    border-radius: 13px;
+    height: 100%;
+    width: calc(91% - 20rem);
+    box-shadow: 0 6px 16px -4px rgb(0 0 0 / 45%);
+    margin-top: -60px;
+    margin-right: 17px;
+}
+
+.student-resume {
+    width: 20%;
+    border-right: 1px solid #dadada;
+}
+
+/* FABS*/
+
+.smiledu-main_body_fabs {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 5%;
+    align-items: center;
+    padding: 10px;
+}
+
+.fab-open {
+    display: flex;
+    flex-direction: column;
+}
+
+.fab {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    background: #2196f3;
+    color: white;
+    font-size: 40px;
+    box-shadow: 0 7px 14px -6px rgb(0 0 0 / 35%);
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.fab-open button {
+    border-radius: 50%;
+    background: white;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 7px 14px -6px rgb(0 0 0 / 35%);
+}
+
+.fab-open img {
+    width: 100%;
+}
+
+.fab-open {    
+    overflow: hidden;
+    height: 0px;
+    opacity: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: all 0.35s ease;
+}
+
+.fab-open.showFabs {    
+    opacity: 1;
+    height: 350px;
+}
+
+.fab.showFabs {    
+    transform: rotate(45deg);
+}
+
+
+
