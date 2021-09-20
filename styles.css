@@ -346,7 +346,23 @@ li, a {
 
 .smiledu-main_body_college-levels {
     margin-top: 33px;
-    margin-right: 14px;
+    margin-right: 5px;
+    height: 490px;
+    overflow-y: scroll;
+}
+
+.smiledu-main_body_college-levels::-webkit-scrollbar {
+    width: 5px;
+}
+
+.smiledu-main_body_college-levels::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+  }
+  
+.smiledu-main_body_college-levels::-webkit-scrollbar-thumb {
+border-radius: 100px;
+background-color: #fcdc27;
 }
 
 .card-collage-levels {
@@ -387,17 +403,6 @@ li, a {
 .card-collage-levels_details_classes_attended {
     text-decoration: underline;
     color: #00ba42;
-}
-
-.smiledu-main_body_student-content {
-    display: flex;
-    background: white;
-    border-radius: 13px;
-    height: 100%;
-    width: calc(91% - 20rem);
-    box-shadow: 0 6px 16px -4px rgb(0 0 0 / 45%);
-    margin-top: -60px;
-    margin-right: 17px;
 }
 
 .student-resume {
@@ -468,5 +473,73 @@ li, a {
     transform: rotate(45deg);
 }
 
+.smiledu-main_body_student-content {
+    display: flex;
+    background: white;
+    border-radius: 13px;
+    height: 100%;
+    width: calc(91% - 20rem);
+    box-shadow: 0 6px 16px -4px rgb(0 0 0 / 30%);
+    margin-top: -60px;
+    margin-right: 17px;
+}
 
+.student-resume {
+    width: 20%;
+    padding: 12px 15px;
+}
 
+.student-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.student-profile {
+    display: flex;
+}
+
+.student-avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.student-avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.student-firstname {
+    font-size: 13px;
+}
+
+.student-color-points {
+    display: flex;
+}
+
+.student-color-points_1 {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background: #46aea3;
+}
+
+.student-color-points_2 {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background: #4d5eba;
+}
+
+.student-menu {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.student-menu img {
+    width: 100%;
+}
