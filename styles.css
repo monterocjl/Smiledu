@@ -81,7 +81,7 @@ li, a {
 }
 
 .smiledu-sidebar_header_menu-btn {
-    background-image: url(/img/menu.svg);
+    background-image: url(https://monterocjl.github.io/Smiledu/img/menu.svg);
     width: 20px;
     height: 20px;
     background-repeat: no-repeat;
@@ -116,7 +116,7 @@ li, a {
 }
 
 .smiledu-sidebar_user_avatar div {
-    background-image: url(/img/icons/corona.png);
+    background-image: url(https://monterocjl.github.io/Smiledu/img/icons/corona.png);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
